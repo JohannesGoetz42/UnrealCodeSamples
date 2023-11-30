@@ -1,0 +1,8 @@
+.vs/
+.vscode/
+.idea/
+Binaries/
+Intermediate/
+Saved/
+enc_temp_folder/
+Build
