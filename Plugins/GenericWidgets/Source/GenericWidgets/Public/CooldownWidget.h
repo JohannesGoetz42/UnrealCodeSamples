@@ -22,7 +22,7 @@ public:
 	UPROPERTY(Transient, meta = (BindWidgetAnim))
 	/** The cooldown Animation. Should have a play length of 1 second, so the playback speed is calculated correctly */
 	UWidgetAnimation* CooldownAnimation;
-	UPROPERTY(meta = (BindWidgetAnimOptional))
+	UPROPERTY(meta = (BindWidgetOptional))
 	/** Displays the remaining cooldown as a number */
 	UTextBlock* CooldownText;
 	UPROPERTY(Transient, meta = (BindWidgetAnimOptional))
