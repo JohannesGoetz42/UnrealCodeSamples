@@ -119,7 +119,7 @@ const IHasLocationMarker* UQuestTemplate::FindLocationInstance(TArray<TSubclassO
 		const int32 SelectedLocationIndex = FMath::RandRange(0, LocationTypes.Num() - 1);
 		TSet<const IHasLocationMarker*> LocationSources;
 		Town->GetLocationSources(LocationTypes[SelectedLocationIndex], LocationSources);
-		if (!LocationTypes.IsEmpty())
+		if (!LocationSources.IsEmpty())
 		{
 			const int32 RandomIndex = FMath::RandRange(0, LocationSources.Num() - 1);
 			return LocationSources.Array()[RandomIndex];
